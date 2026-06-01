@@ -12,3 +12,52 @@ scores_with_douplicates = [85,92,85,78,92,95,85]
 unique_scores= list(set(scores_with_douplicates))
 print("\norigin scores:",scores_with_douplicates)
 print("unique scores:",unique_scores)
+
+
+student = {
+    "name":"alice",
+    "age":20,
+    "scores":[85,92,78],
+    "Hobbies":"footbaal",
+    "department":"Computer Science",
+    "is_active":True
+}
+print("Student Dictionary:")
+print(student)
+
+print("\nStudent name:", student['name'])
+print("Student age:", student['age'])
+print("Student scores:", student['scores'])
+print("Student hobbies:", student['age'])
+print("Average  score :",sum(student['scores'])/len(student['scores']))
+
+# student["greade"] = "A"
+# student["Age"] = 21
+# print("\n After update:",student)
+# alis_score = student['score']
+# al
+
+
+
+
+
+# Grade Calculator
+
+def get_grade(score):
+    if score >= 90:
+        return "A"
+    elif score >= 80:
+        return "B"
+    elif score >= 70:
+        return "C"
+    elif score >= 60:
+        return "D"
+    else:
+        return "F"
+
+test_scores = [95, 85, 75, 65, 55]
+
+for score in test_scores:
+    grade = get_grade(score)
+    print("Score:", score, "-> Grade:", grade)
+
