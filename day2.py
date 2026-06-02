@@ -31,11 +31,15 @@ print("Student scores:", student['scores'])
 print("Student hobbies:", student['age'])
 print("Average  score :",sum(student['scores'])/len(student['scores']))
 
-# student["greade"] = "A"
-# student["Age"] = 21
-# print("\n After update:",student)
-# alis_score = student['score']
-# al
+# Update dictionary
+student["grade"] = "A"
+student["age"] = 21
+
+print("\nAfter update:")
+print(student)
+
+alice_score = student['scores'][0]
+print("First score:", alice_score)
 
 
 
