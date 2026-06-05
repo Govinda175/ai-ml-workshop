@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Score Predictor</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="p-20">
+
+<h1 class="text-2xl font-bold">Student Exam Score Predictor</h1>
+
+<form action="/predict" method="POST">
+
+    <h1 class="text-xl font-bold">Student ID:</h1><br>
+    <input type="text" name="student_id" required><br><br>
+
+    <h1 class="text-xl font-bold">Hours Studied:</h1><br>
+    <input type="number" step="0.1" name="hours_studied" required><br><br>
+
+    <h1 class="text-xl font-bold">Previous Score:</h1><br>
+    <input type="number" step="0.1" name="previous_score" required><br><br>
+
+    <h1 class="text-xl font-bold">Attendance:</h1><br>
+    <input type="number" step="0.1" name="attendance" required><br><br>
+
+    <h1 class="text-xl font-bold">Sleep Hours:</h1><br>
+    <input type="number" step="0.1" name="sleep_hours" required><br><br>
+
+    <h1 class="text-xl font-bold">Extracurricular Activities:</h1   ><br>
+    <select name="extracurricular">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select><br><br>
+
+    <h1 class="text-xl font-bold">Parent Education:</h1><br>
+    <select name="parent_education">
+        <option value="3">Master</option>
+        <option value="2">Bachelor</option>
+        <option value="1">HighSchoo;</option>
+    </select><br><br>
+
+    <h1 class="text-xl font-bold">Internet Access:</h1><br>
+    <select name="internet_access">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select><br><br>
+
+    <button type="submit" class="bg-black text-white text-lg font-bold py-2 px-4 rounded hover:bg-gray-800">
+        Predict Score
+    </button>
+
+</form>
+
+</body>
+</html>
